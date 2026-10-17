@@ -26,3 +26,6 @@ Singapore and the business logo are retained from the supplied website. Fonts ha
 Fluid layout for phones, tablets, laptops and large displays. Navigation collapses below 901px; destinations use three, two or one columns; enquiry fields stack on smaller screens. Inputs use 16px text to avoid mobile focus zoom, interactive controls have touch-friendly sizing, and landscape and safe-area adjustments are included.
 
 The ZIP contains the complete HTML, CSS, JavaScript, images, README and custom-domain CNAME. Extract it and open index.html. No installation or compilation is required.
+
+## Social icon images
+Facebook, Instagram, YouTube, Google and WhatsApp buttons use local SVG files in assets/social/. No icon CDN or additional installation is needed. Each icon has an accessible link label and hover/focus tooltip. The Google feedback call to action also includes its icon.
