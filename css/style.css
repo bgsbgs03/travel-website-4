@@ -78,23 +78,17 @@ button,.button,.socials a{min-height:44px}
 /* Local, crisp social images with soft rounded shapes and touch-friendly targets. */
 .socials{gap:12px;align-items:center;padding:4px 0 8px}.socials a.social-icon{position:relative;display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;min-height:56px;padding:4px;border:1px solid #e6eae5;border-radius:19px;background:#fff;box-shadow:0 4px 12px #173e3a0a;transition:transform .2s,box-shadow .2s}.socials a.social-icon img{display:block;width:48px;height:48px;max-width:none;object-fit:contain}.socials a.social-icon:hover,.socials a.social-icon:focus-visible{transform:translateY(-4px);box-shadow:0 8px 20px #173e3a20;background:white}.icon-tooltip{position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);padding:5px 9px;border-radius:6px;background:var(--ink);color:white;font-size:11px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}.social-icon:hover .icon-tooltip,.social-icon:focus-visible .icon-tooltip{opacity:1}.review-google-icon{flex-shrink:0;width:28px;height:28px;object-fit:contain}.reviews-section .button{gap:10px}@media(max-width:360px){.socials{gap:8px}.socials a.social-icon{width:48px;height:48px;min-height:48px;border-radius:16px}.socials a.social-icon img{width:40px;height:40px}}
 
-/* Balanced MM Holidays branding, sized independently from social icons. */
-.brand{display:flex;align-items:center;flex:0 1 280px;min-width:0}.brand img{display:block;width:280px;max-width:100%;height:auto;object-fit:contain}.navrow{min-height:104px;gap:24px}.footer-top>div:first-child{min-width:0}.footer-top>div:first-child>img{display:block;width:310px;max-width:100%;height:auto;object-fit:contain}.footer-top{gap:36px}
-@media(min-width:901px) and (max-width:1100px){.brand{flex-basis:240px}.brand img{width:240px}nav{gap:18px}.navrow{gap:18px}}
-@media(max-width:900px){.brand{flex-basis:245px}.brand img{width:245px}.menu-toggle{flex-shrink:0}.navrow{min-height:98px}}
-@media(max-width:720px){.brand{flex-basis:210px}.brand img{width:210px}.navrow{min-height:90px;gap:12px}.footer-top>div:first-child>img{width:280px}}
-@media(max-width:380px){.brand{flex-basis:180px}.brand img{width:180px}.navrow{min-height:82px;gap:8px}.menu-toggle{padding:8px 10px}.footer-top>div:first-child>img{width:245px}}
-
-/* Compact header and supplied transparent footer logo. */
-.brand{flex-basis:240px}.brand img{width:240px}.navrow{min-height:94px}
-@media(min-width:901px) and (max-width:1100px){.brand{flex-basis:215px}.brand img{width:215px}}
-@media(max-width:900px){.brand{flex-basis:220px}.brand img{width:220px}.navrow{min-height:90px}}
-@media(max-width:720px){.brand{flex-basis:190px}.brand img{width:190px}.navrow{min-height:82px}}
-@media(max-width:380px){.brand{flex-basis:165px}.brand img{width:165px}.navrow{min-height:76px}}
-
-/* Responsive footer logo sizing. */
-@media(min-width:901px) and (max-width:1100px){}
-@media(min-width:721px) and (max-width:900px){}
-
-/* Medium footer logo size; does not affect the header logo. */
-footer .footer-top .footer-brand-logo{width:160px!important;max-width:100%!important;height:auto!important;display:block}
+/* Balanced branding: different image shapes use matching visible artwork heights.
+   Header: 280 * 448/2048 = 61px. Footer: 150 * 512/1243 = 62px.
+   Each original image keeps its natural aspect ratio and transparency. */
+:root{--header-logo-width:280px;--footer-logo-width:150px}
+.brand{display:flex;align-items:center;flex:0 1 var(--header-logo-width);min-width:0}
+.brand img{display:block;width:var(--header-logo-width);max-width:100%;height:auto;object-fit:contain}
+.navrow{min-height:104px;gap:24px}
+.footer-top>div:first-child{min-width:0}
+footer .footer-top>div:first-child>.footer-brand-logo{display:block;width:var(--footer-logo-width);max-width:100%;height:auto;object-fit:contain}
+.footer-top{gap:36px}
+@media(min-width:901px) and (max-width:1100px){:root{--header-logo-width:250px;--footer-logo-width:134px}nav{gap:18px}.navrow{gap:18px}}
+@media(max-width:900px){:root{--header-logo-width:250px;--footer-logo-width:134px}.menu-toggle{flex-shrink:0}.navrow{min-height:96px}}
+@media(max-width:720px){:root{--header-logo-width:220px;--footer-logo-width:118px}.navrow{min-height:88px;gap:12px}}
+@media(max-width:380px){:root{--header-logo-width:190px;--footer-logo-width:102px}.navrow{min-height:80px;gap:8px}.menu-toggle{padding:8px 10px}}
