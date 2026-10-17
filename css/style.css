@@ -96,5 +96,5 @@ button,.button,.socials a{min-height:44px}
 @media(min-width:901px) and (max-width:1100px){}
 @media(min-width:721px) and (max-width:900px){}
 
-/* Explicit compact footer logo size; does not affect the header logo. */
-footer .footer-top .footer-brand-logo{width:100px!important;max-width:100px!important;height:auto!important;display:block}
+/* Medium footer logo size; does not affect the header logo. */
+footer .footer-top .footer-brand-logo{width:160px!important;max-width:100%!important;height:auto!important;display:block}
