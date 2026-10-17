@@ -5,8 +5,10 @@ Responsive static website. No build tools or dependencies required.
 ## View and deploy
 Open index.html in a browser, or serve this folder with `python3 -m http.server 8000`. Upload index.html, css/, js/ and assets/ to your web host. The existing CNAME for mmholidays.net is preserved. No changes have been made to the live custom domain.
 
-## Social links
-Edit js/config.js and paste the official HTTPS profile URLs for Facebook, Instagram and YouTube. Until configured, each button displays an availability notice rather than linking to an unverified account. WhatsApp is set to +91 9618181413.
+## Social links and Google feedback
+The official Facebook, Instagram and YouTube links are configured in js/config.js and directly in the HTML, so they work without JavaScript. WhatsApp is +91 9618181413.
+
+The Google feedback button uses https://share.google/Lggm1jb3CJWSWkY63, extracted from the earlier GoogleReview_QR_Image.png supplied for MM Holidays. It opens the shared Google destination; visitors may need to choose “Write a review” and sign in. This is not a verified direct review-composer URL. Update googleReview in js/config.js and both HTML links if you later obtain a direct review link.
 
 ## Enquiry form
 Required fields and consent are validated in the browser. Continue to WhatsApp opens a prefilled message to MM Holidays; the visitor must press Send in WhatsApp. The website does not claim the enquiry is already sent and does not store visitor data or send email. It requires JavaScript. No backend setup is needed.

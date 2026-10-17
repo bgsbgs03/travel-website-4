@@ -66,3 +66,11 @@ button,.button,.socials a{min-height:44px}
  .wrap{width:100%}
  .destination{break-inside:avoid}
 }
+
+/* Google feedback call to action. */
+.reviews-section{background:var(--cream);padding:56px 0}.review-inner{display:flex;align-items:center;justify-content:space-between;gap:40px}.review-inner>div{max-width:720px}.review-inner h2{font-size:clamp(28px,3.4vw,42px)}.review-inner p:not(.eyebrow){color:var(--muted);font-size:14px;margin-bottom:0}.review-inner>.button{flex-shrink:0}.footer-review{display:inline-flex;align-items:center;min-height:44px;margin-top:12px;font-size:13px;font-weight:700;text-decoration:underline;text-underline-offset:4px}@media(max-width:720px){.review-inner{flex-direction:column;align-items:flex-start;gap:24px}.reviews-section{padding:40px 0}.review-inner>.button{max-width:100%;white-space:normal}}
+
+/* Keep the consent checkbox inline with the first line of its label. */
+.consent{display:flex;flex-direction:row;align-items:flex-start;gap:9px;line-height:1.5}
+.consent input[type="checkbox"]{flex:0 0 16px;width:16px;height:16px;min-height:0;max-width:16px;margin:0;padding:0;transform:translateY(calc((1.5em - 16px)/2));font-size:11px}
+.consent span{flex:1;min-width:0}
