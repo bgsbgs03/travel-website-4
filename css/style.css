@@ -86,8 +86,12 @@ button,.button,.socials a{min-height:44px}
 @media(max-width:380px){.brand{flex-basis:180px}.brand img{width:180px}.navrow{min-height:82px;gap:8px}.menu-toggle{padding:8px 10px}.footer-top>div:first-child>img{width:245px}}
 
 /* Compact header and supplied transparent footer logo. */
-.brand{flex-basis:240px}.brand img{width:240px}.navrow{min-height:94px}.footer-top>div:first-child>.footer-brand-logo{width:260px;max-width:100%;height:auto}
+.brand{flex-basis:240px}.brand img{width:240px}.navrow{min-height:94px}.footer-top>div:first-child>.footer-brand-logo{width:240px;max-width:100%;height:auto}
 @media(min-width:901px) and (max-width:1100px){.brand{flex-basis:215px}.brand img{width:215px}}
 @media(max-width:900px){.brand{flex-basis:220px}.brand img{width:220px}.navrow{min-height:90px}}
-@media(max-width:720px){.brand{flex-basis:190px}.brand img{width:190px}.navrow{min-height:82px}.footer-top>div:first-child>.footer-brand-logo{width:235px}}
-@media(max-width:380px){.brand{flex-basis:165px}.brand img{width:165px}.navrow{min-height:76px}.footer-top>div:first-child>.footer-brand-logo{width:220px}}
+@media(max-width:720px){.brand{flex-basis:190px}.brand img{width:190px}.navrow{min-height:82px}.footer-top>div:first-child>.footer-brand-logo{width:190px}}
+@media(max-width:380px){.brand{flex-basis:165px}.brand img{width:165px}.navrow{min-height:76px}.footer-top>div:first-child>.footer-brand-logo{width:165px}}
+
+/* Match footer logo width to header at intermediate breakpoints. */
+@media(min-width:901px) and (max-width:1100px){.footer-top>div:first-child>.footer-brand-logo{width:215px}}
+@media(min-width:721px) and (max-width:900px){.footer-top>div:first-child>.footer-brand-logo{width:220px}}
